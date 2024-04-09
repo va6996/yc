@@ -7,22 +7,33 @@ export default function Home() {
     <>
       <Toaster />
 
-      <section className="w-screen h-dvh grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="md:h-full h-80 bg-[#C9F9D1] relative overflow-hidden">
-          <Image
-            src="/mobile-app.png"
-            alt="Mobile App Screenshots"
-            fill
-            className="object-contain mt-8 md:mt-24 px-14 object-bottom"
-          />
+      <section className="w-screen h-dvh grid grid-cols-1 md:grid-cols-2">
+        <div className="md:h-full h-80 bg-[#F5F5F5] relative overflow-hidden">
+          <div className="p-4 flex flex-row">
+            <div className="flex-initial font-normal text-zinc-900 text-3xl leading-tight md:text-4xl">
+              Traveling
+            </div>
+            <div className="flex-initial font-semibold text-zinc-900 text-3xl leading-tight md:text-4xl">
+              Man
+            </div>
+          </div>
+
+          <div className="mt-8 px-14">
+            <img
+              src="/Component.png"
+              alt="Sample itinerary graph"
+              className="relative object-cover object-center"
+            />
+          </div>
         </div>
+
 
         <main className="flex flex-col gap-8 mt-8 justify-center px-6 pb-10">
           <h1 className="font-semibold tracking-tight text-zinc-900 text-3xl leading-tight md:text-4xl max-w-lg">
-            Join the conversation: Secure your spot on our Chat App!
+            Planning your vacations should not feel like a full time job.
           </h1>
           <p className="text-gray-500">
-            Join the waitlist to be notified when our app is available!
+            Define your needs. Let computers do what they do best. Join the waitlist!
           </p>
 
           <EmailForm />

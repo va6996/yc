@@ -14,15 +14,14 @@ export default function EmailForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
+      var address = "https://docs.google.com/forms/d/e/1FAIpQLSdneq7S0sbMNZRG0RN-ej5HHzJQoOmrn4VryiAK-WjFyowxPQ/formResponse?&submit=Submit?usp=pp_url&entry.1815455311="
+      const response = await fetch(`${address}${email}`, {
+        mode: "no-cors",
+        method: "GET",
+        cache: "no-cache",
       });
 
-      if (response.ok) {
+      if (response.ok || response) {
         setEmail("");
         toast.success("Thank you for joining our waitlist! 🚀");
       } else {
@@ -31,7 +30,7 @@ export default function EmailForm() {
       }
     } catch (err) {
       setEmail("");
-      console.error(err);
+      toast.error("Oops! Something went wrong!");
     }
   };
   return (
