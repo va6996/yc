@@ -30,10 +30,10 @@ export default function Home() {
 
         <main className="flex flex-col gap-8 mt-8 justify-center px-6 pb-10">
           <h1 className="font-semibold tracking-tight text-zinc-900 text-3xl leading-tight md:text-4xl max-w-lg">
-            Planning your vacations should not feel like a full time job.
+            Planning your vacations should not feel like a full time job. Making complex itineraries fun again!
           </h1>
           <p className="text-gray-500">
-            Define your needs. Let computers do what they do best. Join the waitlist!
+            Coming up with an elegant solution was harder than we thought. Join the waitlist! 
           </p>
 
           <EmailForm />
