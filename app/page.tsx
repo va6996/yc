@@ -20,7 +20,7 @@ export default function Home() {
 
           <div className="mt-8 px-14">
             <img
-              src="/ycombinator/Component.png"
+              src="/Component.png"
               alt="Sample itinerary graph"
               className="relative object-cover object-center"
             />
